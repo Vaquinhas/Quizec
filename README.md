@@ -1,1 +1,36 @@
-QuizecQuizec is an interactive quiz application designed to foster dynamic interaction between teachers and students. Built with Kotlin and Jetpack Compose, the app leverages Firebase for secure authentication and real-time data management.🚀 FeaturesSecure Authentication: Users can register and log in using Firebase Authentication. The registration process requires email and password confirmation.Quiz Creation: Users can create personalized quizzes by defining a title and description. Each quiz is automatically assigned a unique 6-digit code for participants to join.Custom Questions: Supports multiple question formats:Yes/No (P01): Simple binary choice questions.Multiple Choice (P02): Questions with dynamically added options.Real-time Lobby: A dedicated waiting room where the host can see participants joining in real-time. Player lists are updated instantly via Firebase SnapshotListener.Data Persistence: All quizzes, questions, and player data are stored efficiently in Firebase Firestore.🛠️ Tech StackLanguage: Kotlin UI Framework: Jetpack Compose Backend/Database: Firebase Firestore Authentication: Firebase Authentication 📱 Application FlowEntry: Users start at the Login/Register screen to access the app.Management: Once authenticated, users can create a quiz and receive a unique code.Setup: The creator adds questions (Yes/No or Multiple Choice) to the quiz.Interaction: Participants join the Lobby using the 6-digit code, appearing instantly on the host's screen.👥 AuthorsGonçalo Silva - 2022148262 Celso Jordão - 2003008910 This project was developed for the Arquiteturas Móveis (Mobile Architectures) course at isec. 
+# Quizec
+
+[cite_start]**Quizec** is an interactive quiz application developed with **Kotlin** and **Jetpack Compose**[cite: 9]. [cite_start]It integrates **Firebase** for authentication and real-time data storage, providing a dynamic environment for teachers and students to interact through customized quizzes[cite: 9, 10].
+
+---
+
+## 🚀 Features
+
+* [cite_start]**Secure Authentication**: Integrated with **Firebase Authentication** to manage user registration and login securely[cite: 15].
+* [cite_start]**Quiz Creation**: Users can define a title and description for their quizzes[cite: 24].
+* [cite_start]**Unique Access Codes**: Every quiz automatically generates a **unique 6-digit random code** that serves as an identifier for participants to join[cite: 11, 25].
+* **Custom Question Types**: 
+    * [cite_start]**P01 (Yes/No)**: Simple questions where the correct answer is selected via a checkbox[cite: 32].
+    * [cite_start]**P02 (Multiple Choice)**: Questions with dynamically added options and a selectable correct answer[cite: 33, 34].
+* [cite_start]**Real-time Lobby**: A waiting room where players are added to the quiz in real-time using a `SnapshotListener` to ensure the participant list updates instantly[cite: 38, 41].
+* [cite_start]**Cloud Storage**: All quizzes, questions, and player data are stored in **Firebase Firestore**[cite: 26, 35, 40].
+
+---
+
+## 🛠️ Tech Stack
+
+* [cite_start]**Language**: Kotlin [cite: 9]
+* [cite_start]**UI Framework**: Jetpack Compose [cite: 9]
+* [cite_start]**Backend & Auth**: Firebase (Authentication & Firestore) [cite: 9, 15, 26]
+
+---
+
+## 📖 Application Flow
+
+1.  [cite_start]**Entry**: Users can register by providing an email and password or log in to an existing account[cite: 14, 16, 19].
+2.  [cite_start]**Creation**: Once authenticated, a user can create a quiz and set its details[cite: 18, 23].
+3.  [cite_start]**Setup**: The host adds questions (Yes/No or Multiple Choice) which are associated with the unique quiz code[cite: 29, 31].
+4.  [cite_start]**Interaction**: Participants join the lobby using the 6-digit code, and the host manages the players before starting the quiz[cite: 38, 39].
+
+---
+[cite_start]*Developed for the **Arquiteturas Móveis** course at **isec**.* [cite: 1, 2]
